@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $.ajax({
-        url : "../../ChartSpot/server/getspotdatafromdb.php",
+        url : "../../ChartSpot/server/getspotdatafromdb.php", // Connecting to the database file, to get the data
         type : "GET",
         success : function(data){
             
@@ -20,6 +20,8 @@ $(document).ready(function(){
             gkWh.addColorStop(0.5, 'rgba(255, 0, 0, 0.25');
             gkWh.addColorStop(1, 'rgba(255, 0, 255, 0)');
 
+            // Point styling the Chart
+
             let chartdata = {
                 labels: time,
                 datasets: [
@@ -37,6 +39,8 @@ $(document).ready(function(){
                     }
                 ]
             };
+
+            // Options for the whole chart
 
             let options = {
                 responsive: true,
@@ -85,6 +89,7 @@ $(document).ready(function(){
 
               let ctx = $("#mycanvas");
 
+              // Create the Chart
               let LineGraph = new Chart(ctx, {
                 type: 'line',
                 data: chartdata,

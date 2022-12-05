@@ -4,6 +4,7 @@ header('Content-Type: application/json');
 
 include $_SERVER['DOCUMENT_ROOT']."/Database/session.php";
 
+// Query to get the data from the connected Database
 $req = "SELECT Time, kWh
         FROM SpotPrice 
         ORDER BY UNIX_TIMESTAMP(Time) ASC";

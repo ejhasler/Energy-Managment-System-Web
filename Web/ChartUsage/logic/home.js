@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $.ajax({
-        url : "../../ChartUsage/server/getdatafromdb.php",
+        url : "../../ChartUsage/server/getdatafromdb.php", // Connecting to the database file, to get the data
         type : "GET",
         success : function(data){
             
@@ -26,6 +26,8 @@ $(document).ready(function(){
             gPrice.addColorStop(0, 'rgba(0, 50, 255, 0.5)');
             gPrice.addColorStop(0.5, 'rgba(0, 50, 255, 0.25)');
             gPrice.addColorStop(1, 'rgba(0, 50, 255, 0)');
+
+            // Point styling the Chart
 
             let chartdata = {
                 labels: time,
@@ -56,6 +58,9 @@ $(document).ready(function(){
                     }
                 ]
             };
+
+
+            // Options for the whole chart
 
             let options = {
                 responsive: true,
@@ -104,6 +109,8 @@ $(document).ready(function(){
 
               let ctx = $("#mycanvas");
 
+
+              // Create the Chart
               let LineGraph = new Chart(ctx, {
                 type: 'line',
                 data: chartdata,

@@ -1,5 +1,7 @@
 <?php
 
+// Info about the MariaDB/MySQL
+
 $hostname = 'mysql690.loopia.se';
 $username = 'group10@h328964';
 $password = 'evensivert123';

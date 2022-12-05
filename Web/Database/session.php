@@ -1,5 +1,7 @@
 <?php
 
+// Opens a connections to the database with the info given from db.php
+
 include $_SERVER['DOCUMENT_ROOT']."/Database/db.php";
 
 mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
