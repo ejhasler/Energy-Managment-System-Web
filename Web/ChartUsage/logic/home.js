@@ -33,7 +33,7 @@ $(document).ready(function(){
                 labels: time,
                 datasets: [
                     {
-                        label: "Data Usage",
+                        label: "Energy Usage",
                         fill: false,
                         lineTension: 0.1,
                         backroundColor: gkWh,
