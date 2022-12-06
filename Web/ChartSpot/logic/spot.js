@@ -26,7 +26,7 @@ $(document).ready(function(){
                 labels: time,
                 datasets: [
                     {
-                        label: "Data Usage",
+                        label: "øre/kWh",
                         fill: false,
                         lineTension: 0.1,
                         backroundColor: gkWh,
